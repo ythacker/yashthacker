@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+body {
+  background: linear-gradient(
+      rgba(41, 163, 163, 0.45),
+      rgba(41, 163, 163, 0.45)
+    ),
+     url("active.jpg");
+     position: fixed;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     min-height: 100%;
+  }
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li.dropdown {
+    display: inline-block;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0080ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li a:hover:not(.active) {
+    background-color: black;
+
+}
+
+.active {
+    background-color: #00cccc;
+    font-family: "Courier";
+    font-size: 20px;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+.centered-and-cropped {
+    object-fit: cover;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 10px;
+
+}
+#me {
+  padding-left: 0%;
+}
+#nav {
+  width: 99%;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+}
+/*animations*/
+#uni {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  position: absolute;
+  -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: mymove;
+  animation-duration: 2s;
+  left:3%;
+  top: 11.5%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border: 2px solid black;
+}
+#ten {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 2s;
+    left:3%;
+    top: 43%;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+#comp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 2s;
+    left:3%;
+    top: 70%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+#med {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:14.5%;
+    top: 11.5%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+#tv {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:14.5%;
+    top: 43%;
+    text-align: center;
+    color: white;
+}
+#yt {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:14.5%;
+    top: 70%;
+    text-align: center;
+    color: white;
+}
+#photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 11.5%;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+#game {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 43%;
+    text-align: left;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+#add {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 70%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.description {
+  display: none;
+  padding: 5px;
+  background: white;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  border-color: grey;
+  border-width: 5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Courier";
+  font-size: 20px;
+  border-radius: 25px;
+  border: 5px solid grey;
+  padding: 20px;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  -webkit-animation-name: mymove4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+  animation-name: mymove4;
+  animation-duration: .5s;
+  z-index: 2;
+}
+div{
+  font-family: "Courier";
+}
+/* left 3 */
+@-webkit-keyframes mymove {
+    from {left:101%;}
+    to {left: 3%;}
+}
+
+@keyframes mymove {
+    from {left:101%;}
+    to {left: 3%;}
+}
+/* Middle 3 */
+@-webkit-keyframes mymove2 {
+    from {left:101%;}
+    to {left: 14.5%;}
+}
+
+@keyframes mymove2 {
+    from {left:101%;}
+    to {left: 14.5%;}
+}
+/* End 3 */
+@-webkit-keyframes mymove3 {
+    from {left:101%;}
+    to {left: 26.6%;}
+}
+
+@keyframes mymove3 {
+    from {left:101%;}
+    to {left: 26.6%;}
+}
+/* card slide in */
+@-webkit-keyframes mymove4 {
+    from {left:101%;}
+    to {left: 40%;}
+}
+
+@keyframes mymove4 {
+    from {left:101%;}
+    to {left: 40%;}
+}
+.box1 {
+  float: right;
+  width: 515px;
+  height: 85%;
+  margin: 5px;
+  z-index: -1;
+  background-color: #33cccc;
+  position: absolute;
+  left: 1%;
+  top:9%;
+  opacity: .5;
+}
+#ps{
+  width: 500px;
+  position: absolute;
+  left: 1%;
+  color: white;
+  font-family: "Courier";
+  text-align: center;
+  top: 5%;
+  z-index: -1;
+}
+.btn{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  background: none;
+  -webkit-appearance: none;
+  box-shadow:none;
+  border-radius: 0px;
+  outline-style: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 0;
+}
+.btn:hover {
+      background-color: #33cccc;
+      border-radius: 50%;
+      color: white;
+      height: 100px;
+      width: 100px;
+
+
+}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li><a class="active" href="index.html">  <i class="fa fa-home fa-fw" style="font-size:20px;color:white;padding:0px"></i>  </a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>My Work<b/></a>
+        <div class="dropdown-content">
+          <a href="cur.html">Current</a>
+          <a href="comp.html">Completed</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>About<b/></a>
+        <div class="dropdown-content">
+          <a href="interests.html">Interests</a>
+          <a href="resume.html">Resume</a>
+        </div>
+      </li>
+      <li> <a href="contact.html"> Contact Me </a> </li>
+    </ul>
+    <div class="box1">    </div>
+
+
+
+
+    <div id="uni">
+      <button type="submit" class="btn" onclick="javascript:showDiv();"><i class="fa fa-university" style="font-size:56px;color:black;padding:14.4px"></i></button>
+              <script type="text/javascript">
+              function showDiv() {
+                  div = document.getElementById('unid');
+                  div.style.display = "block";
+              }
+              </script>
+              <h2> Clubs </h2>
+    </div>
+    <div id="unid" class="description">
+         This is about univirsity clubs i participate in.
+         <button onclick="document.getElementById('unid').style.display='none'" > Exit </button>
+
+    </div>
+
+
+    <div id="ten">
+      <button type="submit" class="btn" onclick="javascript:showDiv2();"><i class="fa fa-bullhorn" style="font-size:56px;color:black;padding:14.4px"></i></button>
+       <script type="text/javascript">
+        function showDiv2() {
+            div = document.getElementById('tend');
+            div.style.display = "block";
+        }
+        </script>
+        <h2> Sports </h2>
+    </div>
+    <div id="tend" class="description">
+         This is about sports i participate in.
+    </div>
+
+    <div id="ps"> <p> Click on something to learn more! </div>
+</body>
+</html>

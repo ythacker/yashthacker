@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: linear-gradient(
+      rgba(41, 163, 163, 0.45),
+      rgba(41, 163, 163, 0.45)
+    ),
+   url("contact.jpg");
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
+  }
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li.dropdown {
+    display: inline-block;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0080ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li a:hover:not(.active) {
+    background-color: black;
+
+}
+
+.active {
+    background-color: #00cccc;
+    font-family: "Courier";
+    font-size: 20px;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+.centered-and-cropped {
+    object-fit: cover;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 10px;
+
+}
+#me {
+  padding-left: 0%;
+}
+#nav {
+  width: 99%;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+}
+#info{
+  color: white;
+  width:400px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Courier";
+  font-size: 20px;
+  font-weight: bolder;
+  height: 100%;
+  width: 400px;
+  position: absolute;
+  left: 55%;
+}
+.link{
+  color: white;
+  width:600px;
+  text-align: left;
+  text-decoration: none;
+  font-family: "Courier";
+  font-size: 30px;
+  font-weight: bolder;
+}
+#social{
+  text-align: center;
+}
+#box1{
+  background-color: blue;
+}
+.box1 {
+  float: left;
+  width: 450px;
+  height: 74%;
+  margin: 5px;
+  z-index: -1;
+  background-color: #595959;
+  position: absolute;
+  left: 52%;
+  opacity: .4;
+}
+.box2 {
+  float: left;
+  width: 450px;
+  height: 74%;
+  margin: 5px;
+  z-index: -1;
+  background-color: #00cccc;
+  position: absolute;
+  left: 54%;
+  opacity: .6;
+  top: 70px;
+}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li><a class="active" href="index.html">  <i class="fa fa-home fa-fw" style="font-size:20px;color:white;padding:0px"></i>  </a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>My Work<b/></a>
+        <div class="dropdown-content">
+          <a href="cur.html">Current</a>
+          <a href="comp.html">Completed</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>About<b/></a>
+        <div class="dropdown-content">
+          <a href="interests.html">Interests</a>
+          <a href="resume.html">Resume</a>
+        </div>
+      </li>
+      <li> <a href="contact.html"> Contact Me </a> </li>
+    </ul>
+      <div id="info">
+      <h1> Contact me: </h1>
+      <i class="fa fa-phone" style="font-size:40px;color:white;padding:0px"></i> <a href="tel:555-555-1212" class="link">: 309-532-0385</a> <br><br>
+      <i class="fa fa-at" style="font-size:40px;color:white;padding:0px"></i> <a href="mailto:ythacker@iwu.edu" class="link">: ythacker@iwu.edu</a> <br><br>
+      <i class="fa fa-envelope" style="font-size:40px;color:white;padding:0px"></i> <a href="https://goo.gl/maps/ENsTacvjxiL2" class="link">: 1570 Hunt Drive. Apartment# A7, Normal IL 61716. </a>
+      <h1> Find me on social media at: </h1>
+    <div id="social">
+      <a href="https://www.instagram.com/yoshiat630/">
+        <i class="fa fa-instagram fa-fw" style="font-size:45px;color:white;"></i>
+      </a>
+      <a href="https://twitter.com/yashtag96">
+          <i class="fa fa-twitter fa-fw" style="font-size:45px;color:white;"></i>
+      </a>
+      <a href="https://www.facebook.com/yashtag96">
+        <i class="fa fa-facebook-official fa-fw" style="font-size:45px;color:white;"></i>
+      </a>
+    </div>
+    </div>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body {
+  background: linear-gradient(
+      rgba(41, 163, 163, 0.45),
+      rgba(41, 163, 163, 0.45)
+    ),
+     url("active.jpg");
+     position: fixed;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     min-height: 100%;
+  }
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+li.dropdown {
+    display: inline-block;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0080ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Courier";
+    font-size: 20px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li a:hover:not(.active) {
+    background-color: black;
+
+}
+
+.active {
+    background-color: #00cccc;
+    font-family: "Courier";
+    font-size: 20px;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier";
+    font-size: 20px;
+}
+.centered-and-cropped {
+    object-fit: cover;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 10px;
+
+}
+#me {
+  padding-left: 0%;
+}
+#nav {
+  width: 99%;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+}
+/*animations*/
+#uni {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  position: absolute;
+  -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: mymove;
+  animation-duration: 2s;
+  left:3%;
+  top: 11.5%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border: 5px solid black;
+
+}
+#ten {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 2s;
+    left:3%;
+    top: 40%;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+    border: 5px solid black;
+}
+#comp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3 ;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 11.5%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+#med {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:15%;
+    top: 11.5%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+#tv {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:15%;
+    top: 69%;
+    text-align: center;
+    color: white;
+    border: 5px solid black;
+}
+#yt {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove2;
+    animation-duration: 2s;
+    left:15%;
+    top: 40%;
+    text-align: center;
+    color: white;
+    border: 5px solid black;
+}
+#photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 2s;
+    left:3%;
+    top: 69%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+#game {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 40%;
+    text-align: left;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+#add {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    -webkit-animation-name: mymove3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove3;
+    animation-duration: 2s;
+    left:26.6%;
+    top: 69%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+.description {
+  display: none;
+  padding: 5px;
+  background: white;
+  position: absolute;
+  left: 40%;
+  top: 18%;
+  border-color: grey;
+  border-width: 5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Courier";
+  font-size: 20px;
+  border-radius: 25px;
+  border: 10px solid grey;
+  padding: 20px;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  -webkit-animation-name: mymove4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+  animation-name: mymove4;
+  animation-duration: .5s;
+  -webkit-box-shadow: -1px 4px 43px 5px rgba(0,0,0,0.85);
+  -moz-box-shadow: -1px 4px 43px 5px rgba(0,0,0,0.85);
+  box-shadow: -1px 4px 43px 5px rgba(0,0,0,0.85);
+}
+#cardhead{
+  margin: 1px;
+  padding: 1px;
+}
+.btn:hover {
+      background-color: #ccffcc;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      -webkit-box-shadow: 0px 4px 55px 11px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 4px 55px 11px rgba(0,0,0,0.75);
+      box-shadow: 0px 4px 55px 11px rgba(0,0,0,0.75);
+}
+.btn{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  background: none;
+  -webkit-appearance: none;
+  box-shadow:none;
+  border-radius: 0px;
+  outline-style: none;
+  -webkit-transition-duration: .5s; /* Safari */
+  transition-duration: .5s;
+  cursor: pointer;
+  border: 0;
+
+}
+div{
+  font-family: "Courier";
+}
+/* left 3 */
+@-webkit-keyframes mymove {
+    from {left:101%;}
+    to {left: 3%;}
+}
+
+@keyframes mymove {
+    from {left:101%;}
+    to {left: 3%;}
+}
+/* Middle 3 */
+@-webkit-keyframes mymove2 {
+    from {left:101%;}
+    to {left: 15%;}
+}
+
+@keyframes mymove2 {
+    from {left:101%;}
+    to {left: 15%;}
+}
+/* End 3 */
+@-webkit-keyframes mymove3 {
+    from {left:101%;}
+    to {left: 26.6%;}
+}
+
+@keyframes mymove3 {
+    from {left:101%;}
+    to {left: 26.6%;}
+}
+/* card slide in */
+@-webkit-keyframes mymove4 {
+    from {left:101%;}
+    to {left: 40%;}
+}
+
+@keyframes mymove4 {
+    from {left:101%;}
+    to {left: 40%;}
+}
+.box1 {
+  float: right;
+  width: 515px;
+  height: 85%;
+  margin: 5px;
+  z-index: -1;
+  background-color: #33cccc;
+  position: absolute;
+  left: 1%;
+  top:9%;
+  opacity: .5;
+}
+#ps{
+  width: 500px;
+  position: absolute;
+  left: 1%;
+  color: white;
+  font-family: "Courier";
+  text-align: center;
+  top: 5%;
+  z-index: -1;
+}
+.btn{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  border-color: white;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  box-shadow:none;
+  border-radius: 0px;
+  outline-style: none;
+}
+.exit{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 0;
+  outline-style: none;
+  background-color: transparent;
+}
+#unid{
+    background: linear-gradient(
+        rgba(225, 225, 225, 0.95),
+        rgba(225, 225, 225, 0.95)
+      ), url("clubs2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: green;
+    font-weight: bold;
+    text-align: left;
+}
+#table{
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+#iwu {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+#links {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  font-family: "Courier";
+}
+#tend{
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.95),
+      rgba(225, 225, 225, 0.95)
+    ), url("sports.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+#container {
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+}
+.photobanner {
+  margin: 0px;
+	height: 300px;
+	width: 3000px;
+}
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+}
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -5000px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5000px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5000px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5000px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5000px;
+ }
+
+}
+tr:nth-child(even){background-color: #ddff99}
+tr:nth-child(odd){background-color: #f2f2f2}
+}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li><a class="active" href="index.html">  <i class="fa fa-home fa-fw" style="font-size:20px;color:white;padding:0px"></i>  </a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>My Work<b/></a>
+        <div class="dropdown-content">
+          <a href="cur.html">Current</a>
+          <a href="comp.html">Completed</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>About<b/></a>
+        <div class="dropdown-content">
+          <a href="interests.html">Interests</a>
+          <a href="resume.html">Resume</a>
+        </div>
+      </li>
+      <li> <a href="contact.html"> Contact Me </a> </li>
+    </ul>
+    <div class="box1">    </div>
+
+
+
+    <div id="uni">
+      <button class="btn" onclick="javascript:showDiv();"><i class="fa fa-university" style="font-size:56px;color:black;padding:14.4px"></i></button>
+              <script type="text/javascript">
+              function showDiv() {
+                  div = document.getElementById('unid');
+                  div.style.display = "block";
+              }
+              </script>
+              <h2> Clubs </h2>
+    </div>
+    <div id="unid" class="description">
+          <button class="exit" onclick="document.getElementById('unid').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i>  </button>
+          <h1> Clubs: </h1>
+          <p> I am an active member clubs and honors societies at IWU, they provide me with new experiences and ways to develop myself as well as learn new skills. Below is the list of clubs I am involved in click on any of them to get a description.<p>
+          <table id="clublist">
+            <tr>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=908">National Society of Leadership and Success</a></th>
+              <td id="iwu"><a id="links" href="https://www.iwu.edu/biology/BBB.html">IWU Tri-Beta Bio Honors Society</th>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=564">Habitat for Humanity</th>
+            </tr>
+            <tr>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=465">Association for Computing Machinery</th>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=697">IWU South Indian Student Association </th>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=969">International Society for Optics and Photonics</th>
+            </tr>
+          </table>
+    </div>
+
+
+    <div id="ten">
+      <button class="btn" onclick="javascript:showDiv2();"><i class="fa fa-futbol-o" style="font-size:65px;color:black;padding:10px"></i></button>
+       <script type="text/javascript">
+        function showDiv2() {
+            div = document.getElementById('tend');
+            div.style.display = "block";
+        }
+        </script>
+        <h2> Sports </h2>
+    </div>
+    <div id="tend" class="description">
+         <button class="exit" onclick="document.getElementById('tend').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         <h1 id="cardhead"> Sports: </h1>
+         <p id="cardhead"> I play tennis for IWU at the varsity level. I also avidly watch football, soccer, baskeball and cricket. some of my favorite teams include: Broncos, Colts, Golden State worriors, and Indian Cricket team. And the legend Roger Federer is one of my favorite tennis players. <p>
+           <div id="container">
+             <div class="photobanner">
+               <img class="first" src="broncos.jpg" alt="" />
+               <img src="colts.jpg" alt="" />
+               <img src="roger.jpg" alt="" />
+               <img src="steph.jpg" alt="" />
+               <img src="india.jpg" alt="" />
+             </div>
+          </div>
+    </div>
+
+
+
+    <div id="photo">
+      <button class="btn" onclick="javascript:showDiv7();"> <i class="fa fa-camera-retro" style="font-size:65px;color:black;padding:13px"></i> </button>
+       <script type="text/javascript">
+        function showDiv7() {
+            div = document.getElementById('photod');
+            div.style.display = "block";
+        }
+        </script>
+          <h2>Taking <br> Photos </h2>
+    </div>
+    <div id="photod" class="description">
+         <button class="exit" onclick="document.getElementById('photod').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about photo i participate in.
+    </div>
+
+
+
+    <div id="med">
+      <button class="btn" onclick="javascript:showDiv4();"> <i class="fa fa-stethoscope" style="font-size:70px;color:black;padding:15px"></i></button>
+       <script type="text/javascript">
+        function showDiv4() {
+            div = document.getElementById('medd');
+            div.style.display = "block";
+        }
+        </script>
+        <h2> Medicine </h2>
+    </div>
+    <div id="medd" class="description">
+         <button class="exit" onclick="document.getElementById('medd').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about medicine i participate in.
+    </div>
+
+
+
+    <div id="yt">
+      <button class="btn" onclick="javascript:showDiv6();"> <i class="fa fa-youtube" style="font-size:60px;color:black;padding:18px"></i> </button>
+       <script type="text/javascript">
+        function showDiv6() {
+            div = document.getElementById('ytd');
+            div.style.display = "block";
+        }
+        </script>
+          <h2>YouTube</h2>
+    </div>
+    <div id="ytd" class="description">
+         <button class="exit" onclick="document.getElementById('ytd').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about youtube i participate in.
+    </div>
+
+
+    <div id="tv">
+      <button class="btn" onclick="javascript:showDiv5();"> <i class="fa fa-television" style="font-size:60px;color:black;padding:12px"></i> </button>
+       <script type="text/javascript">
+        function showDiv5() {
+            div = document.getElementById('tvd');
+            div.style.display = "block";
+        }
+        </script>
+        <h2>Watching <br> TV</h2>
+    </div>
+    <div id="tvd" class="description">
+         <button class="exit" onclick="document.getElementById('tvd').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about tv i participate in.
+    </div>
+
+
+    <div id="comp">
+      <button class="btn" onclick="javascript:showDiv3();"> <i class="fa fa-laptop" style="font-size:55px;color:black;padding:15px"></i></button>
+       <script type="text/javascript">
+        function showDiv3() {
+            div = document.getElementById('compd');
+            div.style.display = "block";
+        }
+        </script>
+        <h1> Tech </h1>
+    </div>
+    <div id="compd" class="description">
+         <button class="exit" onclick="document.getElementById('compd').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about programing i participate in.
+    </div>
+
+
+    <div id="game">
+      <button class="btn" onclick="javascript:showDiv8();"> <i class="fa fa-gamepad" style="font-size:70px;color:black;padding:3px"> </i> </button>
+       <script type="text/javascript">
+        function showDiv8() {
+            div = document.getElementById('gamed');
+            div.style.display = "block";
+        }
+        </script>
+          <h2> Gaming </h2>
+    </div>
+    <div id="gamed" class="description">
+         <button class="exit" onclick="document.getElementById('gamed').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about gaming i participate in.
+    </div>
+
+
+    <div id="add">
+      <button class="btn" onclick="javascript:showDiv9();"> <i class="fa fa-question" style="font-size:65px;color:black;padding:12px"></i> </button>
+       <script type="text/javascript">
+        function showDiv9() {
+            div = document.getElementById('addd');
+            div.style.display = "block";
+        }
+        </script>
+          <h2> Suggest <br> Ideas </p>
+    </div>
+    <div id="addd" class="description">
+         <button class="exit" onclick="document.getElementById('addd').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
+         This is about add i participate in.
+    </div>
+
+
+    <div id="ps"> <p> Click on something to learn more! </div>
+</body>
+</html>
