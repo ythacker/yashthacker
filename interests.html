@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <style>
 body {
   background: linear-gradient(
@@ -129,7 +130,7 @@ li a {
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   animation-name: mymove;
   animation-duration: 2s;
-  left:3%;
+  left:2.5%;
   top: 11.5%;
   text-align: center;
   color: white;
@@ -147,7 +148,7 @@ li a {
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: mymove;
     animation-duration: 2s;
-    left:3%;
+    left:2.5%;
     top: 40%;
     text-align: right;
     color: white;
@@ -232,7 +233,7 @@ li a {
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: mymove;
     animation-duration: 2s;
-    left:3%;
+    left:2.5%;
     top: 69%;
     text-align: center;
     color: white;
@@ -287,8 +288,8 @@ li a {
   border-width: 5px;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Courier";
-  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
   border-radius: 25px;
   border: 10px solid grey;
   padding: 20px;
@@ -340,12 +341,12 @@ div{
 /* left 3 */
 @-webkit-keyframes mymove {
     from {left:101%;}
-    to {left: 3%;}
+    to {left: 2.5%;}
 }
 
 @keyframes mymove {
     from {left:101%;}
-    to {left: 3%;}
+    to {left: 2.5%;}
 }
 /* Middle 3 */
 @-webkit-keyframes mymove2 {
@@ -435,12 +436,16 @@ div{
     background-size: 100% 100%;
     color: green;
     font-weight: bold;
-    text-align: left;
-}
-#table{
-    border-collapse: collapse;
-    width: 80%;
     text-align: center;
+}
+#clublist{
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    top: 33%;
+    font-size: 23px;
+    margin-top: 10px;
 }
 #iwu {
     text-align: left;
@@ -463,76 +468,25 @@ div{
   background-size: 100% 100%;
   color: black;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  overflow: hidden;
 }
-#container {
-	width: 80%;
-	overflow: hidden;
-	margin: auto;
+.teni{
+  height: 100px;
+  width: 20%;
+  opacity: .5;
 }
-.photobanner {
-  margin: 0px;
-	height: 300px;
-	width: 3000px;
+.teni:hover{
+  height: auto;
+  width: auto;
+  z-index: 15;
+  position: absolute;
+  left: 25%;
+  opacity: 1;
+  top: 40%;
 }
-.first {
-	-webkit-animation: bannermove 30s linear infinite;
-	   -moz-animation: bannermove 30s linear infinite;
-	    -ms-animation: bannermove 30s linear infinite;
-	     -o-animation: bannermove 30s linear infinite;
-	        animation: bannermove 30s linear infinite;
-}
-@keyframes "bannermove" {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -5000px;
- }
-
-}
-
-@-moz-keyframes bannermove {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -5000px;
- }
-
-}
-
-@-webkit-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -5000px;
- }
-
-}
-
-@-ms-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -5000px;
- }
-
-}
-
-@-o-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -5000px;
- }
-
-}
-tr:nth-child(even){background-color: #ddff99}
-tr:nth-child(odd){background-color: #f2f2f2}
+tr:nth-child(even){background-color: rgba(0, 153, 0,.3)}
+tr:nth-child(odd){background-color: rgba(191, 191, 191,.5)}
 }
 </style>
 <script type="text/javascript">
@@ -575,17 +529,16 @@ tr:nth-child(odd){background-color: #f2f2f2}
     <div id="unid" class="description">
           <button class="exit" onclick="document.getElementById('unid').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i>  </button>
           <h1> Clubs: </h1>
-          <p> I am an active member clubs and honors societies at IWU, they provide me with new experiences and ways to develop myself as well as learn new skills. Below is the list of clubs I am involved in click on any of them to get a description.<p>
-          <table id="clublist">
+        <table id="clublist">
             <tr>
               <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=908">National Society of Leadership and Success</a></th>
               <td id="iwu"><a id="links" href="https://www.iwu.edu/biology/BBB.html">IWU Tri-Beta Bio Honors Society</th>
               <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=564">Habitat for Humanity</th>
             </tr>
             <tr>
-              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=465">Association for Computing Machinery</th>
-              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=697">IWU South Indian Student Association </th>
               <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=969">International Society for Optics and Photonics</th>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=697">IWU South Indian Student Association </th>
+              <td id="iwu"><a id="links" href="https://php.iwu.edu/clubs/org.php?id=465">Association for Computing Machinery</th>
             </tr>
           </table>
     </div>
@@ -604,14 +557,14 @@ tr:nth-child(odd){background-color: #f2f2f2}
     <div id="tend" class="description">
          <button class="exit" onclick="document.getElementById('tend').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
          <h1 id="cardhead"> Sports: </h1>
-         <p id="cardhead"> I play tennis for IWU at the varsity level. I also avidly watch football, soccer, baskeball and cricket. some of my favorite teams include: Broncos, Colts, Golden State worriors, and Indian Cricket team. And the legend Roger Federer is one of my favorite tennis players. <p>
+         <p id="cardhead" style="font-family:courier;font-size:22px"> I play tennis for IWU at the varsity level. I also avidly watch football, soccer, baskeball and cricket. some of my favorite teams include: Broncos, Colts, Golden State worriors, and Indian Cricket team. And the legend Roger Federer is one of my favorite tennis players. <p>
            <div id="container">
              <div class="photobanner">
-               <img class="first" src="broncos.jpg" alt="" />
-               <img src="colts.jpg" alt="" />
-               <img src="roger.jpg" alt="" />
-               <img src="steph.jpg" alt="" />
-               <img src="india.jpg" alt="" />
+               <img class="teni" src="broncos.jpg" alt="" />
+               <img class="teni" src="colts.jpg" alt="" />
+               <img class="teni" src="roger.jpg" alt="" /> <br>
+               <img class="teni" src="steph.jpg" alt="" />
+               <img class="teni" src="india.jpg" alt="" />
              </div>
           </div>
     </div>
