@@ -476,7 +476,7 @@ div{
   width: 20%;
   opacity: .5;
 }
-.teni:hover{
+.teni:active{
   height: auto;
   width: auto;
   z-index: 15;
@@ -485,8 +485,8 @@ div{
   opacity: 1;
   top: 40%;
 }
-tr:nth-child(even){background-color: rgba(0, 153, 0,.3)}
-tr:nth-child(odd){background-color: rgba(191, 191, 191,.5)}
+#photod{
+  text-align: center;
 }
 </style>
 <script type="text/javascript">
@@ -520,6 +520,7 @@ tr:nth-child(odd){background-color: rgba(191, 191, 191,.5)}
       <button class="btn" onclick="javascript:showDiv();"><i class="fa fa-university" style="font-size:56px;color:black;padding:14.4px"></i></button>
               <script type="text/javascript">
               function showDiv() {
+
                   div = document.getElementById('unid');
                   div.style.display = "block";
               }
@@ -558,17 +559,12 @@ tr:nth-child(odd){background-color: rgba(191, 191, 191,.5)}
          <button class="exit" onclick="document.getElementById('tend').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
          <h1 id="cardhead"> Sports: </h1>
          <p id="cardhead" style="font-family:courier;font-size:22px"> I play tennis for IWU at the varsity level. I also avidly watch football, soccer, baskeball and cricket. some of my favorite teams include: Broncos, Colts, Golden State worriors, and Indian Cricket team. And the legend Roger Federer is one of my favorite tennis players. <p>
-           <div id="container">
-             <div class="photobanner">
                <img class="teni" src="broncos.jpg" alt="" />
                <img class="teni" src="colts.jpg" alt="" />
                <img class="teni" src="roger.jpg" alt="" /> <br>
                <img class="teni" src="steph.jpg" alt="" />
                <img class="teni" src="india.jpg" alt="" />
-             </div>
-          </div>
     </div>
-
 
 
     <div id="photo">
@@ -583,7 +579,11 @@ tr:nth-child(odd){background-color: rgba(191, 191, 191,.5)}
     </div>
     <div id="photod" class="description">
          <button class="exit" onclick="document.getElementById('photod').style.display='none'" > <i class="fa fa-times" style="font-size:30px;color:red;padding:0px;opacity:.5"></i> </button>
-         This is about photo i participate in.
+         <h1 id="cardhead"> Phototgraphy: </h1>
+         <p id="cardhead" style="font-family:courier;font-size:22px"> Taking photos is also a hobby of mine. I got my first DLSR last year and I love to take it on trips. </p>
+
+
+
     </div>
 
 
